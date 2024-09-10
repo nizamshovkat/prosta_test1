@@ -1,0 +1,9 @@
+FROM python:3.11-alpina
+
+WORKDIR /app
+
+COPY . .
+
+EXPOSE 8080
+
+CMD [ "pyhon", "app.py" ]
